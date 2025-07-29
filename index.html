@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Defender - Arcade Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Game UI -->
+        <div id="gameUI">
+            <div id="topUI">
+                <div id="score">Score: <span id="scoreValue">0</span></div>
+                <div id="level">Level: <span id="levelValue">1</span></div>
+                <div id="lives">Lives: <span id="livesValue">3</span></div>
+            </div>
+        </div>
+
+        <!-- Game Canvas -->
+        <div id="gameArea">
+            <div id="player"></div>
+            <div id="enemies"></div>
+            <div id="bullets"></div>
+            <div id="powerups"></div>
+            <div id="particles"></div>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>COSMIC DEFENDER</h1>
+            <p>Defend the galaxy from alien invaders!</p>
+            <div class="controls">
+                <p><strong>Controls:</strong></p>
+                <p>WASD or Arrow Keys - Move</p>
+                <p>SPACE - Shoot</p>
+                <p>P - Pause</p>
+            </div>
+            <button id="startButton" class="game-button">START GAME</button>
+        </div>
+
+        <!-- Pause Screen -->
+        <div id="pauseScreen" class="screen hidden">
+            <h2>GAME PAUSED</h2>
+            <button id="resumeButton" class="game-button">RESUME</button>
+            <button id="restartButton" class="game-button">RESTART</button>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>GAME OVER</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <p>Level Reached: <span id="finalLevel">1</span></p>
+            <button id="playAgainButton" class="game-button">PLAY AGAIN</button>
+        </div>
+
+        <!-- Level Complete Screen -->
+        <div id="levelCompleteScreen" class="screen hidden">
+            <h2>LEVEL COMPLETE!</h2>
+            <p>Score: <span id="levelScore">0</span></p>
+            <p>Bonus: <span id="levelBonus">0</span></p>
+            <button id="nextLevelButton" class="game-button">NEXT LEVEL</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
